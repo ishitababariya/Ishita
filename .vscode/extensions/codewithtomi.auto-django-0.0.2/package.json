@@ -1,0 +1,56 @@
+{
+	"name": "auto-django",
+	"displayName": "Auto Django",
+	"publisher": "CodeWithTomi",
+	"description": "Auto Django automates task while building programs with django",
+	"icon": "icon.png",
+	"version": "0.0.2",
+	"engines": {
+		"vscode": "^1.66.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:auto-django.autoDjango"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "auto-django.autoDjango",
+				"title": "Auto Django"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.66.0",
+		"@types/glob": "^7.2.0",
+		"@types/mocha": "^9.1.0",
+		"@types/node": "14.x",
+		"eslint": "^8.11.0",
+		"glob": "^7.2.0",
+		"mocha": "^9.2.2",
+		"typescript": "^4.5.5",
+		"@vscode/test-electron": "^2.1.3"
+	},
+	"__metadata": {
+		"id": "333b7b9d-c475-4a13-9d22-44743388c9bb",
+		"publisherId": "321f8d87-db7f-4885-8539-906fef25a88b",
+		"publisherDisplayName": "Code With Tomi",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1735394045346,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery",
+		"size": 7907
+	}
+}
